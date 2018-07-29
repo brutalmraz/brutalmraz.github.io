@@ -7,9 +7,54 @@
     <link>https://brutalmraz.github.io/</link>
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
-    <description>Talk is Cheap, show me your bug.</description>
-    <pubDate>Mon, 09 Jul 2018 15:09:46 GMT</pubDate>
+    <description>Talk is cheap, show me your bug.</description>
+    <pubDate>Sat, 28 Jul 2018 04:33:22 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>JVM如何执行方法调用</title>
+      <link>https://brutalmraz.github.io/2018/07/28/JVM%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8/</link>
+      <guid>https://brutalmraz.github.io/2018/07/28/JVM%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8/</guid>
+      <pubDate>Sat, 28 Jul 2018 02:14:20 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h3 id=&quot;回顾-重载与重写&quot;&gt;&lt;a href=&quot;#回顾-重载与重写&quot; class=&quot;headerlink&quot; title=&quot;回顾 重载与重写&quot;&gt;&lt;/a&gt;回顾 重载与重写&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;​    同类重载 (同一类中，两个方法名相同，但参数类型不同的方法
+          
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h3 id="回顾-重载与重写"><a href="#回顾-重载与重写" class="headerlink" title="回顾 重载与重写"></a>回顾 重载与重写</h3><ul><li><p>​    同类重载 (同一类中，两个方法名相同，但参数类型不同的方法 可以构成重载)</p></li><li><p>​        子类与父类构成的重载（子类的方法与父类非私有方法名相同，但参数类型不同）</p></li><li><p>​        重写（子类父类非静态非私有方法名 参数类型全部相同，子类对父类构成重写）</p><p>​    要注意子类父类非私有方法的方法名和参数类型完全相同，且都为静态，那么不会构成重写，且子类中的方法隐藏了父类中的方法。</p></li></ul><p>再看一个例子</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 方法一</span></span><br><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doThings</span><span class="params">(String thing,Object ... things2)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">   &#125;</span><br><span class="line"><span class="comment">// 方法二</span></span><br><span class="line">   <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">doThings</span><span class="params">(Object thing,Object things2,Object ... things3)</span></span>&#123;</span><br><span class="line"></span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure><p>doThings(null,1)  实际调用的是方法一</p><p>doThings(null,1,1)  实际调用的是方法一</p><p>doThings(null,new Object[]{1})   手动绕开可变参数的语法糖，就能调动方法二 ，但是这种情况一般会引起编译器的报错，提示这个方法调用具有二义性。</p><p>这是为什么呢？</p><p>来看看Java编译器对于方法的参数声明类型选取流程</p><ol><li>不考虑自动拆装箱及可变参数</li><li>考虑自动拆装箱，但不考虑可变参数</li><li>考虑自动拆装箱，且考虑可变参数</li></ol><p>方法一中，由于String是Object的子类，当doThings(null,1) ； 所以Java编译器会觉得方法一更加贴切。所以编译时会自动选择到方法一。</p><h3 id="JVM的静态绑定和动态绑定"><a href="#JVM的静态绑定和动态绑定" class="headerlink" title="JVM的静态绑定和动态绑定"></a>JVM的静态绑定和动态绑定</h3><p>JVM识别方法的关键在于 类名、方法名、以及方法描述符</p><p>其中<strong>方法描述符</strong>是由方法的参数类型和返回类型所构成。</p><p>JVM与java语言对重写的判定不同， java是基于方法名和参数类型 ，而JVM是基于方法描述符。所以JVM能够准确识别目标方法。</p><p>JVM对于重写的判定基于方法描述符，如果子类定义了与父类非私有、非静态方法相同名字的方法，那么只有这两个方法参数类型和返回类型一致，才会构成重写。 </p><p>对于JAVA语言中重写而非JVM中非重写的情况，编译器会通过<strong>桥接方法</strong>来实现java的重写定义</p><p>对于重载方法的区分在编译阶段已完成，所以可以认为在JVM中并不存在重载这一概念。</p><p>所以在某些文章中，</p><p>重载称为静态绑定（static binding）或编译时多态（compile-time-polymophism）。</p><p>重写称为动态绑定(dynamic binding)</p><p>这个说法并非完全正确，因为某个类的重载方法可能被其子类所重写，所以Java编译器会将所有对非私有实例方法的调用编译为需要动态绑定的类型。</p><p>Java 字节码中调用相关的五种指令</p><ol><li>invokestatic：调用静态方法</li><li>Invokespecial : 调用私有实例方法、构造器，以及使用super关键字调用父类实例方法或构造器和所有实现接口的默认方法。</li><li>Invokevirtual: 调用非私有实例方法</li><li>Invokeinterface :调用接口方法</li><li>Invokedynamic:调用动态方法</li></ol><p>其中1，2 JVM能直接识别具体的目标方法</p><p>而 3，4 JVM 需要借助动态类型来确定具体的方法 （例外，若目标方法仅有一个， 比如目标方法被final修饰，那么就可以不借助动态类型来确定）  </p>]]></content:encoded>
+      
+      <comments>https://brutalmraz.github.io/2018/07/28/JVM%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>JVM是如何加载类的</title>
+      <link>https://brutalmraz.github.io/2018/07/28/JVM%E6%98%AF%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BD%E7%B1%BB%E7%9A%84/</link>
+      <guid>https://brutalmraz.github.io/2018/07/28/JVM%E6%98%AF%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BD%E7%B1%BB%E7%9A%84/</guid>
+      <pubDate>Fri, 27 Jul 2018 16:18:02 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;一、JVM类加载&quot;&gt;&lt;a href=&quot;#一、JVM类加载&quot; class=&quot;headerlink&quot;
+          
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h1 id="一、JVM类加载"><a href="#一、JVM类加载" class="headerlink" title="一、JVM类加载"></a>一、JVM类加载</h1><p>JVM的类加载就像是承包一个建筑工程，首先要出设计方案，然后报备，施工，交付。</p><p>从class文件到内存中的类，需要经过   <strong>「加载」 、「链接」、「初始化」</strong>这三大步骤。</p><p>JAVA语言的类型 分为 <strong>「基本类型」</strong>  和 <strong>「引用类型」</strong></p><p>其中  「基本类型」 是由JVM 预先定义好的。</p><p>「引用类型」分为四大类 ： 类、接口、数组类、泛型参数（编译过程中被抹掉）。</p><p>JVM中具有前三种，但是数组类是JVM直接生成的，所以 类和接口是有对应的字节流，最常见的是class文件的形式。当然字节流还可以是由程序内部生成或者从网络中获取。这些不同形式的字节流都会被加载到JVM中，成为类或者接口。</p><p>​    </p><h1 id="二、类加载的三大步骤"><a href="#二、类加载的三大步骤" class="headerlink" title="二、类加载的三大步骤"></a>二、类加载的三大步骤</h1><h2 id="1-加载"><a href="#1-加载" class="headerlink" title="1.加载"></a>1.加载</h2><p>加载，是指查到字节流，并由此创建类的过程。</p><p>对于数组类来说，他没有对应的字节流，而是通过JVM直接生成的。</p><p>对于其他类来说，JVM需要借助类加载器来完成查找字节流的过程。</p><p><strong>启动类加载器（boot class loader）</strong>就像是<strong>其他类加载器</strong>的祖师爷。</p><p>其他类加载器都是java.lang.ClassLoader的子类，唯独启动类加载器不是，它是由C++实现的。</p><p>JVM有一个潜规则叫做双亲委派模型，即每当一个类加载器接收到加载请求时，先要将请求转发给父类加载器，父类加载器没有找到请求的类的情况下，该加载器才会尝试去加载。 这儿子还真是孝顺，有活儿先给爸爸干。</p><p>在JAVA9之前 启动类加载器负责最基础、最重要的类 ，也就是JRE lib下jar包的类以及由JVM参数-Xbootclasspath指定的类。</p><p>除了启动类加载器外，另外两个重要的加载器  是「扩展类加载器 （extension class loader）」 和「应用类加载器(application class loader)」</p><p>扩展类加载器负责JRE lib/ext 下的jar包  以及JVM参数 java.ext.dirs指定的类</p><p>应用类加载器的父类是扩展类加载器。负责加载应用程序下的类。即JVM参数 -cp/-classpath ；系统变量java.class.path；环境变量CLASSPATH 所指定的路径 。</p><p>JAVA 9引入了模块系统，对上述类加载器进行了少许修改。这里不讨论。</p><h2 id="2-链接"><a href="#2-链接" class="headerlink" title="2.链接"></a>2.链接</h2><p>链接是指将创建的类合并到JVM，使之能够执行的过程。</p><p>它分为验证，准备，解析三个阶段。</p><p>验证阶段，在于确保被加载类能满足JVM的约束条件。这就相当于设计好的工程图纸要交给有关部门审核是否合法合规了。</p><p>准备阶段，为被加载类的静态字段分配内存，以及其他类层次先关的数据结构的构造，比如动态绑定方法表。</p><p>解析阶段，即把上面形成符号引用解析成实际引用。如果符号指向一个未被加载的类，或其字段方法，那么解析将触发这个类的加载。</p><h2 id="3-初始化"><a href="#3-初始化" class="headerlink" title="3.初始化"></a>3.初始化</h2><p>如果被赋值的静态字段被final修饰，且它的类型是基本类型或者字符串，那么该字段会被JAVA编译器标记成常量值。</p><p>初始化即使为标记为常量值的字段赋值，以及执行「clinit」方法的过程。</p><p>JVM会加锁确保clinit 只被执行一次</p><p>初始化完成后，类才成为可执行状态。</p><p>JVM对类的初始化触发情况的举例：</p><ol><li>虚拟机启动，初始化用户指定的主类</li><li>new 指令指定的目标类</li><li>调用静态方法的指令，启动静态方法所在类</li><li>访问静态字段，启动静态字段所在类</li><li>子类初始化触发父类初始化</li><li>一个借口定义了default方法，那么直接或间接实现该接口的类初始化会触发该接口的初始化</li><li>使用反射API进行反射调用，初始化这个类</li><li>初次调用MethodHanlde实例，初始化该MethodHandle指向方法所在的类</li></ol>]]></content:encoded>
+      
+      <comments>https://brutalmraz.github.io/2018/07/28/JVM%E6%98%AF%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BD%E7%B1%BB%E7%9A%84/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>在centOS7上安装mysql5.6</title>

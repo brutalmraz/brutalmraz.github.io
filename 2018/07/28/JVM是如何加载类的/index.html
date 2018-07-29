@@ -70,7 +70,7 @@
 
 
 
-  <meta name="keywords" content="mysql," />
+  <meta name="keywords" content="JVM," />
 
 
 
@@ -83,18 +83,18 @@
 
 
 
-<meta name="description" content="一、安装MySQL1、下载安装包mysql-5.6.34-linux-glibc2.5-x86_64.tar（可前往官网自行下载：http://dev.mysql.com/downloads/mysql/） 2、卸载系统自带的Mariadb 打开Terminal终端： 12[root@localhost ~]# rpm -qa|grep mariadb  // 查询出来已安装的mariadb[ro">
-<meta name="keywords" content="mysql">
+<meta name="description" content="一、JVM类加载JVM的类加载就像是承包一个建筑工程，首先要出设计方案，然后报备，施工，交付。 从class文件到内存中的类，需要经过   「加载」 、「链接」、「初始化」这三大步骤。 JAVA语言的类型 分为 「基本类型」  和 「引用类型」 其中  「基本类型」 是由JVM 预先定义好的。 「引用类型」分为四大类 ： 类、接口、数组类、泛型参数（编译过程中被抹掉）。 JVM中具有前三种，但是数">
+<meta name="keywords" content="JVM">
 <meta property="og:type" content="article">
-<meta property="og:title" content="在centOS7上安装mysql5.6">
-<meta property="og:url" content="https://brutalmraz.github.io/2018/07/09/在centOS7上安装mysql5-6/index.html">
+<meta property="og:title" content="JVM是如何加载类的">
+<meta property="og:url" content="https://brutalmraz.github.io/2018/07/28/JVM是如何加载类的/index.html">
 <meta property="og:site_name" content="PokerDealer&#39;s Club">
-<meta property="og:description" content="一、安装MySQL1、下载安装包mysql-5.6.34-linux-glibc2.5-x86_64.tar（可前往官网自行下载：http://dev.mysql.com/downloads/mysql/） 2、卸载系统自带的Mariadb 打开Terminal终端： 12[root@localhost ~]# rpm -qa|grep mariadb  // 查询出来已安装的mariadb[ro">
+<meta property="og:description" content="一、JVM类加载JVM的类加载就像是承包一个建筑工程，首先要出设计方案，然后报备，施工，交付。 从class文件到内存中的类，需要经过   「加载」 、「链接」、「初始化」这三大步骤。 JAVA语言的类型 分为 「基本类型」  和 「引用类型」 其中  「基本类型」 是由JVM 预先定义好的。 「引用类型」分为四大类 ： 类、接口、数组类、泛型参数（编译过程中被抹掉）。 JVM中具有前三种，但是数">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-09T15:09:46.793Z">
+<meta property="og:updated_time" content="2018-07-29T03:33:16.382Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="在centOS7上安装mysql5.6">
-<meta name="twitter:description" content="一、安装MySQL1、下载安装包mysql-5.6.34-linux-glibc2.5-x86_64.tar（可前往官网自行下载：http://dev.mysql.com/downloads/mysql/） 2、卸载系统自带的Mariadb 打开Terminal终端： 12[root@localhost ~]# rpm -qa|grep mariadb  // 查询出来已安装的mariadb[ro">
+<meta name="twitter:title" content="JVM是如何加载类的">
+<meta name="twitter:description" content="一、JVM类加载JVM的类加载就像是承包一个建筑工程，首先要出设计方案，然后报备，施工，交付。 从class文件到内存中的类，需要经过   「加载」 、「链接」、「初始化」这三大步骤。 JAVA语言的类型 分为 「基本类型」  和 「引用类型」 其中  「基本类型」 是由JVM 预先定义好的。 「引用类型」分为四大类 ： 类、接口、数组类、泛型参数（编译过程中被抹掉）。 JVM中具有前三种，但是数">
 
 
 
@@ -124,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="https://brutalmraz.github.io/2018/07/09/在centOS7上安装mysql5-6/"/>
+  <link rel="canonical" href="https://brutalmraz.github.io/2018/07/28/JVM是如何加载类的/"/>
 
 
 
 
 
-  <title>在centOS7上安装mysql5.6 | PokerDealer's Club</title>
+  <title>JVM是如何加载类的 | PokerDealer's Club</title>
   
 
 
@@ -302,7 +302,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://brutalmraz.github.io/2018/07/09/在centOS7上安装mysql5-6/">
+    <link itemprop="mainEntityOfPage" href="https://brutalmraz.github.io/2018/07/28/JVM是如何加载类的/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="PokerBean">
@@ -319,7 +319,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">在centOS7上安装mysql5.6</h1>
+          <h1 class="post-title" itemprop="name headline">JVM是如何加载类的</h1>
         
 
         <div class="post-meta">
@@ -331,8 +331,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-09T22:43:28+08:00">
-                2018-07-09
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-07-28T00:18:02+08:00">
+                2018-07-28
               </time>
             
 
@@ -354,8 +354,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/mysql/" itemprop="url" rel="index">
-                    <span itemprop="name">mysql</span>
+                  <a href="/categories/JVM/" itemprop="url" rel="index">
+                    <span itemprop="name">JVM</span>
                   </a>
                 </span>
 
@@ -372,8 +372,8 @@
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2018/07/09/在centOS7上安装mysql5-6/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/09/在centOS7上安装mysql5-6/" itemprop="commentCount"></span>
+                <a href="/2018/07/28/JVM是如何加载类的/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/07/28/JVM是如何加载类的/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -381,7 +381,7 @@
 
           
           
-             <span id="/2018/07/09/在centOS7上安装mysql5-6/" class="leancloud_visitors" data-flag-title="在centOS7上安装mysql5.6">
+             <span id="/2018/07/28/JVM是如何加载类的/" class="leancloud_visitors" data-flag-title="JVM是如何加载类的">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -406,7 +406,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,158
+                  1,079
                 </span>
               
 
@@ -422,7 +422,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  5
+                  4
                 </span>
               
             </div>
@@ -443,73 +443,45 @@
       
 
       
-        <h1 id="一、安装MySQL"><a href="#一、安装MySQL" class="headerlink" title="一、安装MySQL"></a>一、安装MySQL</h1><p>1、下载安装包mysql-5.6.34-<a href="http://lib.csdn.net/base/linux" target="_blank" rel="noopener">linux</a>-glibc2.5-x86_64.tar（可前往官网自行下载：<a href="http://dev.mysql.com/downloads/mysql/%EF%BC%89" target="_blank" rel="noopener">http://dev.mysql.com/downloads/mysql/）</a></p>
-<p>2、卸载系统自带的Mariadb</p>
-<p>打开Terminal终端：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost ~]<span class="meta"># rpm -qa|grep mariadb  <span class="comment">// 查询出来已安装的mariadb</span></span></span><br><span class="line">[root@localhost ~]<span class="meta"># rpm -e --nodeps 文件名  <span class="comment">// 卸载mariadb，文件名为上述命令查询出来的文件</span></span></span><br></pre></td></tr></table></figure>
-<p>3、删除etc目录下的my.cnf</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="symbol">@localhost</span> ~]<span class="meta"># rm /etc/my.cnf</span></span><br></pre></td></tr></table></figure>
-<p>4、执行以下命令来创建mysql用户组</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="symbol">@localhost</span> ~]<span class="meta"># groupadd mysql</span></span><br></pre></td></tr></table></figure>
-<p>5、执行以下命令来创建一个用户名为mysql的用户并加入mysql用户组</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="symbol">@localhost</span> ~]<span class="meta"># useradd -g mysql mysql</span></span><br></pre></td></tr></table></figure>
-<p>6、将下载的压缩包放到 /usr/local/ 目录下（通过mv 要移动的文件  /usr/local/）</p>
-<p>7、解压安装包</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-attr">[root@localhost ~]</span># <span class="selector-tag">tar</span> <span class="selector-tag">-xvf</span> <span class="selector-tag">mysql-5</span><span class="selector-class">.6</span><span class="selector-class">.34-linux-glibc2</span><span class="selector-class">.5-x86_64</span><span class="selector-class">.tar</span></span><br></pre></td></tr></table></figure>
-<p>注：如果压缩包为：mysql-5.6.34-linux-glibc2.5-x86_64.tar.gz，</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">则解压命令为: <span class="selector-tag">tar</span> <span class="selector-tag">-zxvf</span> <span class="selector-tag">mysql-5</span><span class="selector-class">.6</span><span class="selector-class">.34-linux-glibc2</span><span class="selector-class">.5-x86_64</span><span class="selector-class">.tar</span><span class="selector-class">.gz</span></span><br></pre></td></tr></table></figure>
-<p>8、将解压好的文件夹重命名为mysql</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="symbol">@localhost</span> <span class="keyword">local</span>]<span class="meta"># mv 解压出来的文件夹名 mysql</span></span><br></pre></td></tr></table></figure>
-<p>9、在 etc 下新建配置文件my.cnf，并在该文件中添加一下代码：</p>
-<p>当然，也有简单方式：直接copy一份my.cnf文件到/etc下，然后再修改即可。</p>
-<p>e g：copy一份/usr/local/mysql/support-files/下的my-default.cnf文件到/etc下</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">命令为：[root@localhost support-<span class="keyword">files</span>]# <span class="keyword">cp</span> my-default.<span class="keyword">cnf</span> /etc/my.<span class="keyword">cnf</span></span><br></pre></td></tr></table></figure>
-<p>然后，配置/etc目录下的my.cnf文件</p>
-<figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost support-<span class="keyword">files</span>]# <span class="keyword">vim</span> /etc/my.<span class="keyword">cnf</span></span><br></pre></td></tr></table></figure>
-<p>通过vim编辑器编辑my.cnf代码如下：</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">[mysql]</span><br><span class="line"><span class="comment"># 设置mysql客户端默认字符集</span></span><br><span class="line"><span class="attribute">default-character-set</span>=utf8 </span><br><span class="line"><span class="attribute">socket</span>=/var/lib/mysql/mysql.sock</span><br><span class="line"></span><br><span class="line">[mysqld]</span><br><span class="line">skip-name-resolve</span><br><span class="line"><span class="comment">#设置3306端口</span></span><br><span class="line">port = 3306 </span><br><span class="line"><span class="attribute">socket</span>=/var/lib/mysql/mysql.sock</span><br><span class="line"><span class="comment"># 设置mysql的安装目录</span></span><br><span class="line"><span class="attribute">basedir</span>=/usr/local/mysql</span><br><span class="line"><span class="comment"># 设置mysql数据库的数据的存放目录</span></span><br><span class="line"><span class="attribute">datadir</span>=/usr/local/mysql/data</span><br><span class="line"><span class="comment"># 允许最大连接数</span></span><br><span class="line"><span class="attribute">max_connections</span>=200</span><br><span class="line"><span class="comment"># 服务端使用的字符集默认为8比特编码的latin1字符集</span></span><br><span class="line"><span class="attribute">character-set-server</span>=utf8</span><br><span class="line"><span class="comment"># 创建新表时将使用的默认存储引擎</span></span><br><span class="line"><span class="attribute">default-storage-engine</span>=INNODB</span><br><span class="line"><span class="attribute">lower_case_table_name</span>=1</span><br><span class="line"><span class="attribute">max_allowed_packet</span>=16M</span><br></pre></td></tr></table></figure>
-<p>10、进入安装mysql软件目录</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="symbol">@localhost</span> ~]<span class="meta"># cd /usr/local/mysql</span></span><br><span class="line">[root<span class="symbol">@localhost</span> mysql]<span class="meta"># chown -R mysql:mysql ./       修改当前目录拥有着为mysql用户</span></span><br><span class="line">[root<span class="symbol">@localhost</span> mysql]<span class="meta"># ./scripts/mysql_install_db --user=mysql --basedir=/usr/local/mysql/ --datadir=/usr/local/mysql/data/ 安装数据库</span></span><br></pre></td></tr></table></figure>
-<p>注：若执行以上最后一个命令出现以下问题：</p>
-<figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">FATAL <span class="string">ERROR:</span> please install the following Perl modules before executing </span><br><span class="line">.<span class="regexp">/scripts/</span><span class="string">mysql_install_db:</span><span class="string">Data:</span>:Dumper</span><br></pre></td></tr></table></figure>
-<p>解决方法 ：安装autoconf库  </p>
-<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">命令: yum -y <span class="keyword">install</span> autoconf   //此包安装时会安装<span class="keyword">Data</span>:Dumper模块</span><br><span class="line">安装完成重新执行上述最后一个命令</span><br></pre></td></tr></table></figure>
-<p>重新回到上述第三个命令继续操作：</p>
-<figure class="highlight haskell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost mysql]# chown -<span class="type">R</span> mysql:mysql <span class="class"><span class="keyword">data</span> 修改当前<span class="keyword">data</span>目录的拥有者为mysql用户</span></span><br></pre></td></tr></table></figure>
-<p>到此数据库安装完毕！</p>
-<h1 id="二、配置MySQL"><a href="#二、配置MySQL" class="headerlink" title="二、配置MySQL"></a>二、配置MySQL</h1><p>1、授予my.cnf最大权限</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="symbol">@localhost</span> ~]<span class="meta"># chown 777 /etc/my.cnf</span></span><br></pre></td></tr></table></figure>
-<p>设置开机自启动服务控制脚本：</p>
-<p>2、复制启动脚本到资源目录</p>
-<figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost mysql]# cp .<span class="regexp">/support-files/my</span>sql.server <span class="regexp">/etc/</span>rc.d<span class="regexp">/init.d/my</span>sqld</span><br></pre></td></tr></table></figure>
-<p>3、增加mysqld服务控制脚本执行权限</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="symbol">@localhost</span> mysql]<span class="meta"># chmod +x /etc/rc.d/init.d/mysqld</span></span><br></pre></td></tr></table></figure>
-<p>4、将mysqld服务加入到系统服务</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="symbol">@localhost</span> mysql]<span class="meta"># chkconfig --add mysqld</span></span><br></pre></td></tr></table></figure>
-<p>5、检查mysqld服务是否已经生效</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="symbol">@localhost</span> mysql]<span class="meta"># chkconfig --list mysqld</span></span><br></pre></td></tr></table></figure>
-<p>命令输出类似下面的结果:</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mysqld <span class="number">0</span>:off <span class="number">1</span>:off <span class="number">2</span>:<span class="keyword">on</span> <span class="number">3</span>:<span class="keyword">on</span> <span class="number">4</span>:<span class="keyword">on</span> <span class="number">5</span>:<span class="keyword">on</span> <span class="number">6</span>:off</span><br></pre></td></tr></table></figure>
-<p>表明mysqld服务已经生效，在2、3、4、5运行级别随系统启动而自动启动，以后可以使用service命令控制mysql的启动和停止</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">命令为:service mysqld <span class="literal">start</span>和service mysqld <span class="literal">stop</span></span><br></pre></td></tr></table></figure>
-<p>6、启动mysqld</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root@localhost mysql]#<span class="built_in"> service </span>mysqld start</span><br></pre></td></tr></table></figure>
-<p>7、将mysql的bin目录加入PATH环境变量，编辑 ~/.bash_profile文件</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="symbol">@localhost</span> mysql]<span class="meta"># vim ~/.bash_profile</span></span><br></pre></td></tr></table></figure>
-<p>在文件最后添加如下信息:</p>
-<figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">export PATH=<span class="variable">$PATH</span><span class="symbol">:/usr/local/mysql/bin</span></span><br></pre></td></tr></table></figure>
-<p>然后按ESC键</p>
-<p>继续 shift键加冒号打出来=&gt;  ：</p>
-<p>接下来输入wq回车即可</p>
-<p>执行下面的命令是修改的内容立即生效:</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="symbol">@localhost</span> mysql]<span class="meta"># source ~/.bash_profile</span></span><br></pre></td></tr></table></figure>
-<p>8、以root账户登录mysql,默认是没有密码的</p>
-<figure class="highlight autoit"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[root<span class="symbol">@localhost</span> mysql]<span class="meta"># mysql -uroot -p</span></span><br></pre></td></tr></table></figure>
-<p>要输入密码的时候直接回车即可。</p>
-<p>9、设置root账户密码为root（也可以修改成你要的密码）</p>
-<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt;use mysql</span><br><span class="line">mysql&gt;update<span class="built_in"> user </span><span class="builtin-name">set</span> <span class="attribute">password</span>=password('root') where <span class="attribute">user</span>=<span class="string">'root'</span> <span class="keyword">and</span> <span class="attribute">host</span>=<span class="string">'localhost'</span>;</span><br><span class="line">mysql&gt;flush privileges;</span><br></pre></td></tr></table></figure>
-<p>10、设置远程主机登录，注意下面的your username 和 your password改成你需要设置的用户和密码</p>
-<figure class="highlight lasso"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mysql&gt;GRANT <span class="literal">ALL</span> PRIVILEGES <span class="keyword">ON</span> *.* <span class="keyword">TO</span> <span class="string">'your username'</span>@<span class="string">'%'</span> IDENTIFIED <span class="keyword">BY</span> <span class="string">'your password'</span> <span class="keyword">WITH</span></span><br><span class="line">GRANT OPTION;</span><br></pre></td></tr></table></figure>
+        <h1 id="一、JVM类加载"><a href="#一、JVM类加载" class="headerlink" title="一、JVM类加载"></a>一、JVM类加载</h1><p>JVM的类加载就像是承包一个建筑工程，首先要出设计方案，然后报备，施工，交付。</p>
+<p>从class文件到内存中的类，需要经过   <strong>「加载」 、「链接」、「初始化」</strong>这三大步骤。</p>
+<p>JAVA语言的类型 分为 <strong>「基本类型」</strong>  和 <strong>「引用类型」</strong></p>
+<p>其中  「基本类型」 是由JVM 预先定义好的。</p>
+<p>「引用类型」分为四大类 ： 类、接口、数组类、泛型参数（编译过程中被抹掉）。</p>
+<p>JVM中具有前三种，但是数组类是JVM直接生成的，所以 类和接口是有对应的字节流，最常见的是class文件的形式。当然字节流还可以是由程序内部生成或者从网络中获取。这些不同形式的字节流都会被加载到JVM中，成为类或者接口。</p>
+<p>​    </p>
+<h1 id="二、类加载的三大步骤"><a href="#二、类加载的三大步骤" class="headerlink" title="二、类加载的三大步骤"></a>二、类加载的三大步骤</h1><h2 id="1-加载"><a href="#1-加载" class="headerlink" title="1.加载"></a>1.加载</h2><p>加载，是指查到字节流，并由此创建类的过程。</p>
+<p>对于数组类来说，他没有对应的字节流，而是通过JVM直接生成的。</p>
+<p>对于其他类来说，JVM需要借助类加载器来完成查找字节流的过程。</p>
+<p><strong>启动类加载器（boot class loader）</strong>就像是<strong>其他类加载器</strong>的祖师爷。</p>
+<p>其他类加载器都是java.lang.ClassLoader的子类，唯独启动类加载器不是，它是由C++实现的。</p>
+<p>JVM有一个潜规则叫做双亲委派模型，即每当一个类加载器接收到加载请求时，先要将请求转发给父类加载器，父类加载器没有找到请求的类的情况下，该加载器才会尝试去加载。 这儿子还真是孝顺，有活儿先给爸爸干。</p>
+<p>在JAVA9之前 启动类加载器负责最基础、最重要的类 ，也就是JRE lib下jar包的类以及由JVM参数-Xbootclasspath指定的类。</p>
+<p>除了启动类加载器外，另外两个重要的加载器  是「扩展类加载器 （extension class loader）」 和「应用类加载器(application class loader)」</p>
+<p>扩展类加载器负责JRE lib/ext 下的jar包  以及JVM参数 java.ext.dirs指定的类</p>
+<p>应用类加载器的父类是扩展类加载器。负责加载应用程序下的类。即JVM参数 -cp/-classpath ；系统变量java.class.path；环境变量CLASSPATH 所指定的路径 。</p>
+<p>JAVA 9引入了模块系统，对上述类加载器进行了少许修改。这里不讨论。</p>
+<h2 id="2-链接"><a href="#2-链接" class="headerlink" title="2.链接"></a>2.链接</h2><p>链接是指将创建的类合并到JVM，使之能够执行的过程。</p>
+<p>它分为验证，准备，解析三个阶段。</p>
+<p>验证阶段，在于确保被加载类能满足JVM的约束条件。这就相当于设计好的工程图纸要交给有关部门审核是否合法合规了。</p>
+<p>准备阶段，为被加载类的静态字段分配内存，以及其他类层次先关的数据结构的构造，比如动态绑定方法表。</p>
+<p>解析阶段，即把上面形成符号引用解析成实际引用。如果符号指向一个未被加载的类，或其字段方法，那么解析将触发这个类的加载。</p>
+<h2 id="3-初始化"><a href="#3-初始化" class="headerlink" title="3.初始化"></a>3.初始化</h2><p>如果被赋值的静态字段被final修饰，且它的类型是基本类型或者字符串，那么该字段会被JAVA编译器标记成常量值。</p>
+<p>初始化即使为标记为常量值的字段赋值，以及执行「clinit」方法的过程。</p>
+<p>JVM会加锁确保clinit 只被执行一次</p>
+<p>初始化完成后，类才成为可执行状态。</p>
+<p>JVM对类的初始化触发情况的举例：</p>
+<ol>
+<li>虚拟机启动，初始化用户指定的主类</li>
+<li>new 指令指定的目标类</li>
+<li>调用静态方法的指令，启动静态方法所在类</li>
+<li>访问静态字段，启动静态字段所在类</li>
+<li>子类初始化触发父类初始化</li>
+<li>一个借口定义了default方法，那么直接或间接实现该接口的类初始化会触发该接口的初始化</li>
+<li>使用反射API进行反射调用，初始化这个类</li>
+<li>初次调用MethodHanlde实例，初始化该MethodHandle指向方法所在的类</li>
+</ol>
+
       
     </div>
     
@@ -538,7 +510,7 @@
   </li>
   <li class="post-copyright-link">
     <strong>本文链接：</strong>
-    <a href="https://brutalmraz.github.io/2018/07/09/在centOS7上安装mysql5-6/" title="在centOS7上安装mysql5.6">https://brutalmraz.github.io/2018/07/09/在centOS7上安装mysql5-6/</a>
+    <a href="https://brutalmraz.github.io/2018/07/28/JVM是如何加载类的/" title="JVM是如何加载类的">https://brutalmraz.github.io/2018/07/28/JVM是如何加载类的/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>
@@ -553,7 +525,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/mysql/" rel="tag"># mysql</a>
+            <a href="/tags/JVM/" rel="tag"># JVM</a>
           
         </div>
       
@@ -566,8 +538,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/07/08/使用hexo搭建个人博客（一）/" rel="next" title="hexo搭建个人博客（基础篇）">
-                <i class="fa fa-chevron-left"></i> hexo搭建个人博客（基础篇）
+              <a href="/2018/07/09/在centOS7上安装mysql5-6/" rel="next" title="在centOS7上安装mysql5.6">
+                <i class="fa fa-chevron-left"></i> 在centOS7上安装mysql5.6
               </a>
             
           </div>
@@ -576,8 +548,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/28/JVM是如何加载类的/" rel="prev" title="JVM是如何加载类的">
-                JVM是如何加载类的 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/28/JVM如何执行方法调用/" rel="prev" title="JVM如何执行方法调用">
+                JVM如何执行方法调用 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -774,7 +746,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、安装MySQL"><span class="nav-number">1.</span> <span class="nav-text">一、安装MySQL</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、配置MySQL"><span class="nav-number">2.</span> <span class="nav-text">二、配置MySQL</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#一、JVM类加载"><span class="nav-number">1.</span> <span class="nav-text">一、JVM类加载</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#二、类加载的三大步骤"><span class="nav-number">2.</span> <span class="nav-text">二、类加载的三大步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-加载"><span class="nav-number">2.1.</span> <span class="nav-text">1.加载</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-链接"><span class="nav-number">2.2.</span> <span class="nav-text">2.链接</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-初始化"><span class="nav-number">2.3.</span> <span class="nav-text">3.初始化</span></a></li></ol></li></ol></div>
             
 
           </div>
