@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="PokerDealer&#39;s Club">
 <meta property="og:description" content="回顾 重载与重写 ​    同类重载 (同一类中，两个方法名相同，但参数类型不同的方法 可以构成重载)  ​        子类与父类构成的重载（子类的方法与父类非私有方法名相同，但参数类型不同）  ​        重写（子类父类非静态非私有方法名 参数类型全部相同，子类对父类构成重写） ​    要注意子类父类非私有方法的方法名和参数类型完全相同，且都为静态，那么不会构成重写，且子类中的方法隐">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-07-28T04:33:22.879Z">
+<meta property="og:updated_time" content="2018-07-29T03:35:45.066Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="JVM如何执行方法调用">
 <meta name="twitter:description" content="回顾 重载与重写 ​    同类重载 (同一类中，两个方法名相同，但参数类型不同的方法 可以构成重载)  ​        子类与父类构成的重载（子类的方法与父类非私有方法名相同，但参数类型不同）  ​        重写（子类父类非静态非私有方法名 参数类型全部相同，子类对父类构成重写） ​    要注意子类父类非私有方法的方法名和参数类型完全相同，且都为静态，那么不会构成重写，且子类中的方法隐">
@@ -443,7 +443,7 @@
       
 
       
-        <h3 id="回顾-重载与重写"><a href="#回顾-重载与重写" class="headerlink" title="回顾 重载与重写"></a>回顾 重载与重写</h3><ul>
+        <h1 id="回顾-重载与重写"><a href="#回顾-重载与重写" class="headerlink" title="回顾 重载与重写"></a>回顾 重载与重写</h1><ul>
 <li><p>​    同类重载 (同一类中，两个方法名相同，但参数类型不同的方法 可以构成重载)</p>
 </li>
 <li><p>​        子类与父类构成的重载（子类的方法与父类非私有方法名相同，但参数类型不同）</p>
@@ -465,7 +465,7 @@
 <li>考虑自动拆装箱，且考虑可变参数</li>
 </ol>
 <p>方法一中，由于String是Object的子类，当doThings(null,1) ； 所以Java编译器会觉得方法一更加贴切。所以编译时会自动选择到方法一。</p>
-<h3 id="JVM的静态绑定和动态绑定"><a href="#JVM的静态绑定和动态绑定" class="headerlink" title="JVM的静态绑定和动态绑定"></a>JVM的静态绑定和动态绑定</h3><p>JVM识别方法的关键在于 类名、方法名、以及方法描述符</p>
+<h1 id="JVM的静态绑定和动态绑定"><a href="#JVM的静态绑定和动态绑定" class="headerlink" title="JVM的静态绑定和动态绑定"></a>JVM的静态绑定和动态绑定</h1><p>JVM识别方法的关键在于 类名、方法名、以及方法描述符</p>
 <p>其中<strong>方法描述符</strong>是由方法的参数类型和返回类型所构成。</p>
 <p>JVM与java语言对重写的判定不同， java是基于方法名和参数类型 ，而JVM是基于方法描述符。所以JVM能够准确识别目标方法。</p>
 <p>JVM对于重写的判定基于方法描述符，如果子类定义了与父类非私有、非静态方法相同名字的方法，那么只有这两个方法参数类型和返回类型一致，才会构成重写。 </p>
@@ -746,7 +746,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#回顾-重载与重写"><span class="nav-number">1.</span> <span class="nav-text">回顾 重载与重写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JVM的静态绑定和动态绑定"><span class="nav-number">2.</span> <span class="nav-text">JVM的静态绑定和动态绑定</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#回顾-重载与重写"><span class="nav-number">1.</span> <span class="nav-text">回顾 重载与重写</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#JVM的静态绑定和动态绑定"><span class="nav-number">2.</span> <span class="nav-text">JVM的静态绑定和动态绑定</span></a></li></ol></div>
             
 
           </div>
