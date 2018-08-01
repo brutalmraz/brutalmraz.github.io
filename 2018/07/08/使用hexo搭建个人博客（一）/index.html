@@ -455,20 +455,20 @@
 <p><code>$ npm install hexo-cli -g</code></p>
 <p>这一步可能需要翻墙，所以没有梯子的同学，可以切换至淘宝镜像<a href="http://npm.taobao.org/" target="_blank" rel="noopener">http://npm.taobao.org/</a> ，再执行以上命令。 </p>
 <h2 id="初始设置"><a href="#初始设置" class="headerlink" title="初始设置"></a>初始设置</h2><h3 id="hexo创建目录"><a href="#hexo创建目录" class="headerlink" title="hexo创建目录"></a>hexo创建目录</h3><p>执行以下命令，hexo 将会在当前路径创建一个blog文件夹，这个文件夹将是你的个人博客的主要工作空间。 </p>
-<figure class="highlight armasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">hexo</span> init <span class="keyword">blog</span></span><br><span class="line"><span class="keyword">cd </span><span class="keyword">blog</span></span><br><span class="line"><span class="keyword">npm </span>install</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init blog</span><br><span class="line">cd blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
 <h3 id="生成静态页面"><a href="#生成静态页面" class="headerlink" title="生成静态页面"></a>生成静态页面</h3><p><code>$ hexo g</code></p>
 <h3 id="本地运行"><a href="#本地运行" class="headerlink" title="本地运行"></a>本地运行</h3><p><code>$ hexo s</code></p>
 <h3 id="Have-a-look"><a href="#Have-a-look" class="headerlink" title="Have a look."></a>Have a look.</h3><p>打开浏览器 访问<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a> </p>
 <p>你会发现，博客已经初始化完成，初始版本是 landscape 皮肤， 略丑。不用担心，后续你可以进行一系列强大的个性化定制。</p>
 <h2 id="几个常用的hexo-命令"><a href="#几个常用的hexo-命令" class="headerlink" title="几个常用的hexo 命令"></a>几个常用的hexo 命令</h2><ul>
-<li><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- hexo generate (hexo g)     生成静态文件，会在当前目录下生成一个新的叫做public的文件夹</span><br><span class="line">- hexo<span class="built_in"> server </span>(hexo s)         启动本地web服务，用于博客的预览</span><br><span class="line">- hexo deploy (hexo d)        部署博客到远端（比如github, heroku等平台）</span><br><span class="line">- hexo new “postName”    #新建文章</span><br><span class="line">- hexo new<span class="built_in"> page </span>“pageName”   #新建页面</span><br></pre></td></tr></table></figure>
+<li><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">- hexo generate (hexo g)     生成静态文件，会在当前目录下生成一个新的叫做public的文件夹</span><br><span class="line">- hexo server (hexo s)         启动本地web服务，用于博客的预览</span><br><span class="line">- hexo deploy (hexo d)        部署博客到远端（比如github, heroku等平台）</span><br><span class="line">- hexo new “postName”    #新建文章</span><br><span class="line">- hexo new page “pageName”   #新建页面</span><br></pre></td></tr></table></figure>
 </li>
 </ul>
 <h2 id="发布你的第一篇文章"><a href="#发布你的第一篇文章" class="headerlink" title="发布你的第一篇文章"></a>发布你的第一篇文章</h2><h3 id="新建文件"><a href="#新建文件" class="headerlink" title="新建文件"></a>新建文件</h3><p>在终端输入</p>
 <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new page “helloword”</span><br></pre></td></tr></table></figure>
 <p>此时在source/_posts 文件夹下将会生成一个helloword.md 文件，请使用markdown语言编辑文件内容。  </p>
 <h3 id="生成预览"><a href="#生成预览" class="headerlink" title="生成预览"></a>生成预览</h3><p>编辑完毕后在终端输入</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">hexo g</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br></pre></td></tr></table></figure>
 <p>hexo 会在本地进行静态页面文件的生成，此时你可以执行hexo s 部署本地服务， 访问<a href="http://localhost:4000/" target="_blank" rel="noopener">http://localhost:4000/</a>   进行预览</p>
 <h3 id="部署到远端"><a href="#部署到远端" class="headerlink" title="部署到远端"></a>部署到远端</h3><p>本文的远程部署方案是与github pages 服务结合。</p>
 <h4 id="1st"><a href="#1st" class="headerlink" title="1st:"></a>1st:</h4><p> 你需要创建一个$username.github.io 的github仓库， 其中$username= 你的GitHub昵称</p>
@@ -477,7 +477,7 @@
 <p> 运行命令</p>
 <p><code>$ npm install hexo-deployer-git --save</code></p>
 <h4 id="3rd"><a href="#3rd" class="headerlink" title="3rd:"></a>3rd:</h4><p>在全局配置文件_config.yml中 配置参数deploy</p>
-<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>: git</span><br><span class="line">  <span class="attribute">repo</span>: <span class="attribute">https</span>:<span class="comment">//github.com/username/username.github.io.git</span></span><br><span class="line">  <span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/username/username.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <h4 id="4th"><a href="#4th" class="headerlink" title="4th:"></a>4th:</h4><p>执行hexo g  生成静态文件</p>
 <p>执行hexo d  进行远程部署</p>
 <h4 id="5th"><a href="#5th" class="headerlink" title="5th:"></a>5th:</h4><p>访问<a href="https://username.github.io" target="_blank" rel="noopener">https://username.github.io</a> </p>
