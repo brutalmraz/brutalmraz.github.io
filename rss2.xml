@@ -8,8 +8,52 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>Talk is cheap, show me your bug.</description>
-    <pubDate>Wed, 01 Aug 2018 14:48:57 GMT</pubDate>
+    <pubDate>Sun, 23 Dec 2018 07:51:16 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>大话Mac快捷键</title>
+      <link>http://brutalmraz.github.io/2018/12/23/%E5%A4%A7%E8%AF%9DMac%E5%BF%AB%E6%8D%B7%E9%94%AE/</link>
+      <guid>http://brutalmraz.github.io/2018/12/23/%E5%A4%A7%E8%AF%9DMac%E5%BF%AB%E6%8D%B7%E9%94%AE/</guid>
+      <pubDate>Sun, 23 Dec 2018 07:32:06 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;大话Mac快捷键&quot;&gt;&lt;a href=&quot;#大话Mac快捷键&quot; class=&quot;headerlink&quot; title=&quot;大话Mac快捷键&quot;&gt;&lt;/a&gt;大话Mac快捷键&lt;/h1&gt;&lt;p&gt;MacOS  发展至今已经来到了10.14,ta深受广大Mac用户的喜爱.
+          
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h1 id="大话Mac快捷键"><a href="#大话Mac快捷键" class="headerlink" title="大话Mac快捷键"></a>大话Mac快捷键</h1><p>MacOS  发展至今已经来到了10.14,ta深受广大Mac用户的喜爱. 当然这与其灵动且不失人性化的系统体验不可分割.</p><p>本文将对Mac一些主流的快捷键效率操作进行一个梳理.希望能对你有所帮助</p><h2 id="1-Mac快捷键概览"><a href="#1-Mac快捷键概览" class="headerlink" title="1. Mac快捷键概览"></a>1. Mac快捷键概览</h2><ul><li>control键在Mac系统里没有多少存在感，大多数情况下，作为其他快捷键组合的附属组合而存在。按住control +鼠标左键= 鼠标右键</li><li>option 在Mac系统里用途比较广泛</li><li>command 在Mac 系统里大约相当于windows的control,  是主快捷键</li></ul><h2 id="2-中流砥柱command"><a href="#2-中流砥柱command" class="headerlink" title="2. 中流砥柱command"></a>2. 中流砥柱command</h2><ul><li>command+c    复制</li><li>command+v    粘贴</li><li>command+x    剪切</li><li>command+z    还原</li><li>command+tab   快速切换程序， 此时若按住command不松，再按下q 就能快速关闭程序了</li><li>command+q 强制关闭当前程序</li><li>command+w 关闭当前程序的当前tab页</li><li>command+~ 在同一个程序不同窗口之间切换</li><li>option+command+esc 呼出强制关闭程序界面</li><li>fn+delete  删除光标后面的内容</li><li>​按住command +超链接 = 使用新标签打开链接    </li></ul><h2 id="3-天外奇兵option"><a href="#3-天外奇兵option" class="headerlink" title="3. 天外奇兵option"></a>3. 天外奇兵option</h2><ul><li>拖拽文件或者图标的时候，按住option不放，可以进行复制</li><li>在菜单栏中 按下option 可以展示隐藏菜单</li><li>关闭同一个程序的多个窗口，点击关闭按钮前按住option，随之会关闭该程序的所有窗口</li><li>在访达中选中文件，按下command+option+i ,会自动打开检查器，展示文件信息，切换选择时，检查器不会消失，并且会更新成切换后的文件信息</li><li>按下option右键点击文件时，会出现文件默认打开方式和复制文件路径</li><li>按下opion 点击文件夹，自动展开文件夹结构</li></ul><h2 id="4-截图先锋"><a href="#4-截图先锋" class="headerlink" title="4. 截图先锋"></a>4. 截图先锋</h2><ul><li><p>command+shift+3  全屏截图</p></li><li><p>command+shift+4  区域截图</p></li><li><p>command+shift+4  区域截图 显示出十字光标后 按下space，可以截取单个窗口的截图</p><p>​                注意,在按下space之前,再多按住option 不松,还可以去掉边缘阴影</p></li><li><p>command+shift+control+3  全屏截图到剪切板</p></li><li><p>command+shift+control+4  区域截图到剪切板</p></li><li><p>使用spotlight 搜索 ‘抓图’ （英文系统搜索 image capture） 可以设置延时截图</p></li><li><p><strong>在最新的MacOS mojave 中, 你只需要记住</strong></p><p><strong>command+shft+5 你就可以选择以上所有的截图的操作,非常方便. 甚至还可以进行录屏操作,不可谓不强大</strong></p></li></ul>]]></content:encoded>
+      
+      <comments>http://brutalmraz.github.io/2018/12/23/%E5%A4%A7%E8%AF%9DMac%E5%BF%AB%E6%8D%B7%E9%94%AE/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>从零开始玩docker</title>
+      <link>http://brutalmraz.github.io/2018/08/30/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%8E%A9docker/</link>
+      <guid>http://brutalmraz.github.io/2018/08/30/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%8E%A9docker/</guid>
+      <pubDate>Thu, 30 Aug 2018 02:52:15 GMT</pubDate>
+      <description>
+      
+        
+        
+          
+          
+            &lt;h1 id=&quot;从零开始玩docker&quot;&gt;&lt;a href=&quot;#从零开始玩docker&quot; class=&quot;headerlink&quot; title=&quot;从零开始玩docker&quot;&gt;&lt;/a&gt;从零开始玩docker&lt;/h1&gt;&lt;h2 id=&quot;一-安装&quot;&gt;&lt;a href=&quot;#一-安装&quot;
+          
+        
+      
+      </description>
+      
+      <content:encoded><![CDATA[<h1 id="从零开始玩docker"><a href="#从零开始玩docker" class="headerlink" title="从零开始玩docker"></a>从零开始玩docker</h1><h2 id="一-安装"><a href="#一-安装" class="headerlink" title="一.安装"></a>一.安装</h2><h3 id="1-Mac-OS"><a href="#1-Mac-OS" class="headerlink" title="1.Mac OS"></a>1.Mac OS</h3><h4 id="1-gt-通过homebrew-安装"><a href="#1-gt-通过homebrew-安装" class="headerlink" title="1&gt; 通过homebrew 安装"></a>1&gt; 通过homebrew 安装</h4><pre><code>brew cask install docker</code></pre><h4 id="2-gt-官网手动下载dmg安装包"><a href="#2-gt-官网手动下载dmg安装包" class="headerlink" title="2&gt; 官网手动下载dmg安装包"></a>2&gt; 官网手动下载dmg安装包</h4><h3 id="2-Windows"><a href="#2-Windows" class="headerlink" title="2.Windows"></a>2.Windows</h3><h2 id="二-check"><a href="#二-check" class="headerlink" title="二. check"></a>二. check</h2><h3 id="1-检查docker-版本号"><a href="#1-检查docker-版本号" class="headerlink" title="1.检查docker 版本号"></a>1.检查docker 版本号</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> docker --version</span><br></pre></td></tr></table></figure><p><img src="/assets/image-20180830110510749.png" alt="image-20180830110510749">{: width=”100px” height=”50px”}</p><p>2.</p><h3 id="2-设置镜像加速"><a href="#2-设置镜像加速" class="headerlink" title="2.设置镜像加速"></a>2.设置镜像加速</h3><p>鉴于国内网络问题，后续拉取 Docker 镜像十分缓慢，我们可以需要配置加速器来解决，网易的镜像地址：<a href="http://hub-mirror.c.163.com。在任务栏点击" target="_blank" rel="noopener">http://hub-mirror.c.163.com。在任务栏点击</a> Docker for mac 应用图标 -&gt; Perferences… -&gt; Daemon -&gt; Registry mirrors。在列表中填写加速器地址即可。修改完成之后，点击 Apply &amp; Restart 按钮，Docker 就会重启并应用配置的镜像地址了。</p><p>我们可以使用</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> docker info</span><br></pre></td></tr></table></figure><p>来检查是否配置成功</p><p><img src="/assets/image-20180830110808839.png" alt="image-20180830110808839"></p><h2 id="三-尝试运行第一个Docker-容器"><a href="#三-尝试运行第一个Docker-容器" class="headerlink" title="三.尝试运行第一个Docker 容器"></a>三.尝试运行第一个Docker 容器</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker run -d -p 80:80 --name webserver nginx</span><br></pre></td></tr></table></figure><p>服务运行后，可以访问 <a href="http://localhost/" target="_blank" rel="noopener">http://localhost</a>，如果看到了 “Welcome to nginx!”，就说明 Docker for Mac 安装成功了。</p><p><img src="/assets/image-20180830111012753.png" alt="image-20180830111012753"></p><h2 id="四-镜像"><a href="#四-镜像" class="headerlink" title="四. 镜像"></a>四. 镜像</h2><p>查看所有镜像</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker image ls</span></span><br></pre></td></tr></table></figure><p>删除镜像</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker image rm 镜像名</span></span><br></pre></td></tr></table></figure><p>获取镜像 ubuntu16.04</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker pull ubuntu:16.04</span><br></pre></td></tr></table></figure><h2 id="五-容器"><a href="#五-容器" class="headerlink" title="五.容器"></a>五.容器</h2><p>创建容器 </p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ docker run ubuntu:14.04 /bin/<span class="built_in">echo</span> <span class="string">'Hello world'</span></span><br></pre></td></tr></table></figure><p>查看正在运行的容器</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker container ls</span></span><br></pre></td></tr></table></figure><p>查看所有的容器（包括已终止的）</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker container ls -a</span></span><br></pre></td></tr></table></figure><p>删除掉所有已终止的容器</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker container prune</span></span><br></pre></td></tr></table></figure><p>删除指定的容器</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> docker container rm  容器名</span></span><br></pre></td></tr></table></figure>]]></content:encoded>
+      
+      <comments>http://brutalmraz.github.io/2018/08/30/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%8E%A9docker/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>知识付费时代，这几个专栏不会让你失望</title>
