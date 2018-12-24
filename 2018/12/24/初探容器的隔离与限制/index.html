@@ -91,7 +91,7 @@
 <meta property="og:site_name" content="PokerDealer&#39;s Club">
 <meta property="og:description" content="docker的隔离我们都知道计算机只认识0和1，所以无论用什么语言编写的程序都需要通过某种方式翻译成二进制文件，才能让计算机看懂我们的代码，从而将软件在计算机硬件上运行起来。 且为了让代码能正常运行。我们往往要提供相应的数据，使代码进行一些输入输出操作。这个数据和二进制代码的综合，就是我们通常说的一个程序。也叫代码的可执行镜像。一旦程序被执行起来，它就从磁盘上的二进制文件编程了内存中的数据，寄存器">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-24T15:53:45.044Z">
+<meta property="og:updated_time" content="2018-12-24T15:56:15.778Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="初探容器的隔离与限制">
 <meta name="twitter:description" content="docker的隔离我们都知道计算机只认识0和1，所以无论用什么语言编写的程序都需要通过某种方式翻译成二进制文件，才能让计算机看懂我们的代码，从而将软件在计算机硬件上运行起来。 且为了让代码能正常运行。我们往往要提供相应的数据，使代码进行一些输入输出操作。这个数据和二进制代码的综合，就是我们通常说的一个程序。也叫代码的可执行镜像。一旦程序被执行起来，它就从磁盘上的二进制文件编程了内存中的数据，寄存器">
@@ -406,7 +406,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1,332
+                  1,327
                 </span>
               
 
@@ -458,7 +458,9 @@
 <p>所以资源必须得到限制，才能保证宿主机上各进程有条不紊的进行。docker利用cgroups对 CPU、内存、磁盘、网络带宽等等资源进行了限制，同时，我们有必要了解Cgroups 还能够对进程进行优先级设置、审计，以及将进程挂起和恢复等操作。</p>
 <p>你如果在容器里执行 top 指令，就会发现，它显示的信息居然是宿主机的 CPU 和内存数据，而不是当前容器的数据。 造成这个问题的原因就是，/proc 文件系统并不知道用户通过 Cgroups 给这个容器做了什么样的资源限制，即：/proc 文件系统不了解 Cgroups 限制的存在。</p>
 <p>在生产环境中，这个问题必须进行修正，否则应用程序在容器里读取到的 CPU 核数、可用内存等信息都是宿主机上的数据，这会给应用的运行带来非常大的困惑和风险。这也是在企业中，容器化应用碰到的一个常见问题，也是容器相较于虚拟机另一个不尽如人意的地方。</p>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">一个docker容器，其实是一个“单进程”模型。</span><br><span class="line"></span><br><span class="line">在这个运行的docker容器中。启用了多个Linux NameSpace来对环境进行隔离，并且所能使用的系统资源受到Cgroups的限制。</span><br><span class="line"></span><br><span class="line">由于一个容器的本质就是一个进程，用户的应用进程实际上就是容器里 PID=1 的进程，也是其他后续创建的所有进程的父进程。这就意味着，在一个容器中，你没办法同时运行两个不同的应用，除非你能事先找到一个公共的 PID=1 的程序来充当两个不同应用的父进程，这也是为什么很多人都会用 systemd 或者 supervisord 这样的软件来代替应用本身作为容器的启动进程。 但是这不是好的解决方案.</span><br></pre></td></tr></table></figure>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p>一个docker容器，其实是一个“单进程”模型。</p>
+<p>在这个运行的docker容器中。启用了多个Linux NameSpace来对环境进行隔离，并且所能使用的系统资源受到Cgroups的限制。</p>
+<p>由于一个容器的本质就是一个进程，用户的应用进程实际上就是容器里 PID=1 的进程，也是其他后续创建的所有进程的父进程。这就意味着，在一个容器中，你没办法同时运行两个不同的应用，除非你能事先找到一个公共的 PID=1 的程序来充当两个不同应用的父进程，这也是为什么很多人都会用 systemd 或者 supervisord 这样的软件来代替应用本身作为容器的启动进程。 但是这不是好的解决方案.</p>
 
       
     </div>
