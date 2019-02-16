@@ -4,7 +4,26 @@
 
     
   <url>
-    <loc>http://brutalmraz.coding.me/2018/12/24/%E5%88%9D%E6%8E%A2%E5%AE%B9%E5%99%A8%E7%9A%84%E9%9A%94%E7%A6%BB%E4%B8%8E%E9%99%90%E5%88%B6/</loc>
+    <loc>http://brutalmraz.github.io/2019/02/17/Dockerfile%E6%8C%87%E4%BB%A4%E7%AE%80%E8%B0%88/</loc>
+    <lastmod>2019-02-16T16:30:08.249Z</lastmod>
+    <data>
+        <display>
+        <title>Dockerfile指令简谈</title>
+        <pubTime>2019-02-16T16:27:22.000Z</pubTime>
+        
+        <tag>docker</tag>
+         
+        <tag>容器</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://brutalmraz.github.io/2018/12/24/%E5%88%9D%E6%8E%A2%E5%AE%B9%E5%99%A8%E7%9A%84%E9%9A%94%E7%A6%BB%E4%B8%8E%E9%99%90%E5%88%B6/</loc>
     <lastmod>2018-12-24T15:56:15.778Z</lastmod>
     <data>
         <display>
@@ -20,7 +39,7 @@
          
            
              
-              <breadCrumb title="容器" url="http://brutalmraz.coding.me/categories/%E5%AE%B9%E5%99%A8/"/>
+              <breadCrumb title="容器" url="http://brutalmraz.github.io/categories/%E5%AE%B9%E5%99%A8/"/>
           
         </display>
     </data>
@@ -28,7 +47,7 @@
 
     
   <url>
-    <loc>http://brutalmraz.coding.me/2018/12/23/%E5%A4%A7%E8%AF%9DMac%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
+    <loc>http://brutalmraz.github.io/2018/12/23/%E5%A4%A7%E8%AF%9DMac%E5%BF%AB%E6%8D%B7%E9%94%AE/</loc>
     <lastmod>2018-12-23T07:51:16.996Z</lastmod>
     <data>
         <display>
@@ -40,7 +59,7 @@
          
            
              
-              <breadCrumb title="Mac OS" url="http://brutalmraz.coding.me/categories/Mac-OS/"/>
+              <breadCrumb title="Mac OS" url="http://brutalmraz.github.io/categories/Mac-OS/"/>
           
         </display>
     </data>
@@ -49,7 +68,7 @@
     
     
   <url>
-    <loc>http://brutalmraz.coding.me/2018/08/30/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%8E%A9docker/</loc>
+    <loc>http://brutalmraz.github.io/2018/08/30/%E4%BB%8E%E9%9B%B6%E5%BC%80%E5%A7%8B%E7%8E%A9docker/</loc>
     <lastmod>2018-08-30T05:56:26.320Z</lastmod>
     <data>
         <display>
@@ -65,7 +84,7 @@
          
            
              
-              <breadCrumb title="容器" url="http://brutalmraz.coding.me/categories/%E5%AE%B9%E5%99%A8/"/>
+              <breadCrumb title="容器" url="http://brutalmraz.github.io/categories/%E5%AE%B9%E5%99%A8/"/>
           
         </display>
     </data>
@@ -73,7 +92,7 @@
 
     
   <url>
-    <loc>http://brutalmraz.coding.me/2018/08/01/%E7%9F%A5%E8%AF%86%E4%BB%98%E8%B4%B9%E6%97%B6%E4%BB%A3%EF%BC%8C%E8%BF%99%E5%87%A0%E4%B8%AA%E4%B8%93%E6%A0%8F%E4%B8%8D%E4%BC%9A%E8%AE%A9%E4%BD%A0%E5%A4%B1%E6%9C%9B/</loc>
+    <loc>http://brutalmraz.github.io/2018/08/01/%E7%9F%A5%E8%AF%86%E4%BB%98%E8%B4%B9%E6%97%B6%E4%BB%A3%EF%BC%8C%E8%BF%99%E5%87%A0%E4%B8%AA%E4%B8%93%E6%A0%8F%E4%B8%8D%E4%BC%9A%E8%AE%A9%E4%BD%A0%E5%A4%B1%E6%9C%9B/</loc>
     <lastmod>2018-08-01T14:48:57.656Z</lastmod>
     <data>
         <display>
@@ -89,7 +108,7 @@
          
            
              
-              <breadCrumb title="干货分享" url="http://brutalmraz.coding.me/categories/%E5%B9%B2%E8%B4%A7%E5%88%86%E4%BA%AB/"/>
+              <breadCrumb title="干货分享" url="http://brutalmraz.github.io/categories/%E5%B9%B2%E8%B4%A7%E5%88%86%E4%BA%AB/"/>
           
         </display>
     </data>
@@ -98,7 +117,7 @@
     
     
   <url>
-    <loc>http://brutalmraz.coding.me/2018/07/28/JVM%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8/</loc>
+    <loc>http://brutalmraz.github.io/2018/07/28/JVM%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8/</loc>
     <lastmod>2018-07-29T03:35:45.066Z</lastmod>
     <data>
         <display>
@@ -110,7 +129,7 @@
          
            
              
-              <breadCrumb title="JVM" url="http://brutalmraz.coding.me/categories/JVM/"/>
+              <breadCrumb title="JVM" url="http://brutalmraz.github.io/categories/JVM/"/>
           
         </display>
     </data>
@@ -118,7 +137,7 @@
 
     
   <url>
-    <loc>http://brutalmraz.coding.me/2018/07/28/JVM%E6%98%AF%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BD%E7%B1%BB%E7%9A%84/</loc>
+    <loc>http://brutalmraz.github.io/2018/07/28/JVM%E6%98%AF%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BD%E7%B1%BB%E7%9A%84/</loc>
     <lastmod>2018-07-29T03:33:16.382Z</lastmod>
     <data>
         <display>
@@ -130,7 +149,7 @@
          
            
              
-              <breadCrumb title="JVM" url="http://brutalmraz.coding.me/categories/JVM/"/>
+              <breadCrumb title="JVM" url="http://brutalmraz.github.io/categories/JVM/"/>
           
         </display>
     </data>
@@ -138,7 +157,7 @@
 
     
   <url>
-    <loc>http://brutalmraz.coding.me/2018/07/08/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
+    <loc>http://brutalmraz.github.io/2018/07/08/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%EF%BC%88%E4%B8%80%EF%BC%89/</loc>
     <lastmod>2018-07-09T15:09:56.880Z</lastmod>
     <data>
         <display>
@@ -150,7 +169,7 @@
          
            
              
-              <breadCrumb title="blog" url="http://brutalmraz.coding.me/categories/blog/"/>
+              <breadCrumb title="blog" url="http://brutalmraz.github.io/categories/blog/"/>
           
         </display>
     </data>

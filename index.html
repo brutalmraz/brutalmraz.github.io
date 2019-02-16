@@ -87,7 +87,7 @@
 <meta name="keywords" content="JAVA MYSQL SringBoot SpringCloud">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Pokerbean&#39;s blog">
-<meta property="og:url" content="http://brutalmraz.coding.me/index.html">
+<meta property="og:url" content="http://brutalmraz.github.io/index.html">
 <meta property="og:site_name" content="Pokerbean&#39;s blog">
 <meta property="og:description" content="Talk is cheap, show me your bug.">
 <meta property="og:locale" content="zh-Hans">
@@ -123,7 +123,7 @@
 
 
 
-  <link rel="canonical" href="http://brutalmraz.coding.me/"/>
+  <link rel="canonical" href="http://brutalmraz.github.io/"/>
 
 
 
@@ -312,7 +312,189 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://brutalmraz.coding.me/2018/12/24/初探容器的隔离与限制/">
+    <link itemprop="mainEntityOfPage" href="http://brutalmraz.github.io/2019/02/17/Dockerfile指令简谈/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="PokerBean">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/wukong.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Pokerbean's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/02/17/Dockerfile指令简谈/" itemprop="url">Dockerfile指令简谈</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-17T00:27:22+08:00">
+                2019-02-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/17/Dockerfile指令简谈/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/17/Dockerfile指令简谈/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2019/02/17/Dockerfile指令简谈/" class="leancloud_visitors" data-flag-title="Dockerfile指令简谈">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  2,111
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  8
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          Docker容器被类比成被赋予了生命的Docker镜像。它本质上就是一个具有容器特质和微操作系统特质的应用而已。
+Dockerfile 是Docker的核心，它告诉Docker怎样去创建镜像。Docker容器是具有层状结构的。除了最终层，其他所有层都是只读的。Dockerfile正好指明了通过什么样的顺序和内容来添加层。基础镜像会提供初始化层，基础镜像也被我们叫做父镜像。Docker会从远端仓库下载我们需要的镜像层，而我们已经下载过的镜像层， docker会复用，不会重复下载。
+Dockerfile指令都是大写的，并且通常出现在行首。每一行都可以容纳一个指令，创建镜像的时候，这些指令都是从上到
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/02/17/Dockerfile指令简谈/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://brutalmraz.github.io/2018/12/24/初探容器的隔离与限制/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="PokerBean">
@@ -516,7 +698,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://brutalmraz.coding.me/2018/12/23/大话Mac快捷键/">
+    <link itemprop="mainEntityOfPage" href="http://brutalmraz.github.io/2018/12/23/大话Mac快捷键/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="PokerBean">
@@ -727,7 +909,7 @@ command+v    粘
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://brutalmraz.coding.me/2018/08/30/从零开始玩docker/">
+    <link itemprop="mainEntityOfPage" href="http://brutalmraz.github.io/2018/08/30/从零开始玩docker/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="PokerBean">
@@ -933,7 +1115,7 @@ command+v    粘
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://brutalmraz.coding.me/2018/08/01/知识付费时代，这几个专栏不会让你失望/">
+    <link itemprop="mainEntityOfPage" href="http://brutalmraz.github.io/2018/08/01/知识付费时代，这几个专栏不会让你失望/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="PokerBean">
@@ -1139,7 +1321,7 @@ command+v    粘
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://brutalmraz.coding.me/2018/07/28/JVM如何执行方法调用/">
+    <link itemprop="mainEntityOfPage" href="http://brutalmraz.github.io/2018/07/28/JVM如何执行方法调用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="PokerBean">
@@ -1351,7 +1533,7 @@ command+v    粘
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://brutalmraz.coding.me/2018/07/28/JVM是如何加载类的/">
+    <link itemprop="mainEntityOfPage" href="http://brutalmraz.github.io/2018/07/28/JVM是如何加载类的/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="PokerBean">
@@ -1559,7 +1741,7 @@ JVM中具有前三种，但是数组类是JVM直接生成的，所以 类和接�
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://brutalmraz.coding.me/2018/07/08/使用hexo搭建个人博客（一）/">
+    <link itemprop="mainEntityOfPage" href="http://brutalmraz.github.io/2018/07/08/使用hexo搭建个人博客（一）/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="PokerBean">
@@ -1801,7 +1983,7 @@ Gi
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-count">8</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1931,7 +2113,7 @@ Gi
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">6.8k</span>
+    <span title="Site words total count">8.9k</span>
   
 </div>
 
