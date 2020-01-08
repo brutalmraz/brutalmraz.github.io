@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>类加载 on PokerBean 的个人主页</title>
+    <link>https://brutalmraz.github.io/tags/%E7%B1%BB%E5%8A%A0%E8%BD%BD/</link>
+    <description>Recent content in 类加载 on PokerBean 的个人主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sun, 29 Jul 2018 16:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://brutalmraz.github.io/tags/%E7%B1%BB%E5%8A%A0%E8%BD%BD/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JVM是如何加载类的</title>
+      <link>https://brutalmraz.github.io/post/jvm%E6%98%AF%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BD%E7%B1%BB%E7%9A%84/</link>
+      <pubDate>Sun, 29 Jul 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://brutalmraz.github.io/post/jvm%E6%98%AF%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BD%E7%B1%BB%E7%9A%84/</guid>
+      <description>一、JVM类加载 JVM的类加载就像是承包一个建筑工程，首先要出设计方案，然后报备，施工，交付。 从class文件到内存中的类，需要经过 **「加</description>
+    </item>
+    
+  </channel>
+</rss>

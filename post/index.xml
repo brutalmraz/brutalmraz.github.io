@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on PokerBean 的个人主页</title>
+    <link>https://brutalmraz.github.io/post/</link>
+    <description>Recent content in Posts on PokerBean 的个人主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 06 Aug 2018 16:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://brutalmraz.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>知识付费时代，这几个专栏不会让你失望</title>
+      <link>https://brutalmraz.github.io/post/%E7%9F%A5%E8%AF%86%E4%BB%98%E8%B4%B9%E6%97%B6%E4%BB%A3%E8%BF%99%E5%87%A0%E4%B8%AA%E4%B8%93%E6%A0%8F%E4%B8%8D%E4%BC%9A%E8%AE%A9%E4%BD%A0%E5%A4%B1%E6%9C%9B/</link>
+      <pubDate>Mon, 06 Aug 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://brutalmraz.github.io/post/%E7%9F%A5%E8%AF%86%E4%BB%98%E8%B4%B9%E6%97%B6%E4%BB%A3%E8%BF%99%E5%87%A0%E4%B8%AA%E4%B8%93%E6%A0%8F%E4%B8%8D%E4%BC%9A%E8%AE%A9%E4%BD%A0%E5%A4%B1%E6%9C%9B/</guid>
+      <description>知识付费时代，这几个专栏不会让你失望 1.左耳朵耗子专栏 相信我，骨灰级耗叔的专栏不会让你失望，每篇都够你啃一段时间了。 陈皓，人称耗子叔，是一位</description>
+    </item>
+    
+    <item>
+      <title>hexo搭建个人博客（基础篇）</title>
+      <link>https://brutalmraz.github.io/post/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/</link>
+      <pubDate>Wed, 01 Aug 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://brutalmraz.github.io/post/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/</guid>
+      <description>Pre As a developer,保持良好的写作和记录习惯是hin重要的。个人博客一种不错的形式。考虑到国内很多技术社区博客页面确实太老旧，太TM丑</description>
+    </item>
+    
+    <item>
+      <title>JVM是如何加载类的</title>
+      <link>https://brutalmraz.github.io/post/jvm%E6%98%AF%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BD%E7%B1%BB%E7%9A%84/</link>
+      <pubDate>Sun, 29 Jul 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://brutalmraz.github.io/post/jvm%E6%98%AF%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BD%E7%B1%BB%E7%9A%84/</guid>
+      <description>一、JVM类加载 JVM的类加载就像是承包一个建筑工程，首先要出设计方案，然后报备，施工，交付。 从class文件到内存中的类，需要经过 **「加</description>
+    </item>
+    
+    <item>
+      <title>JVM如何执行方法调用</title>
+      <link>https://brutalmraz.github.io/post/jvm%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8/</link>
+      <pubDate>Sat, 28 Jul 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://brutalmraz.github.io/post/jvm%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8/</guid>
+      <description>回顾 重载与重写 ​ 同类重载 (同一类中，两个方法名相同，但参数类型不同的方法 可以构成重载) ​ 子类与父类构成的重载（子类的方法与父类非私有方法名相</description>
+    </item>
+    
+  </channel>
+</rss>

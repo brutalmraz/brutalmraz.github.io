@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>method on PokerBean 的个人主页</title>
+    <link>https://brutalmraz.github.io/tags/method/</link>
+    <description>Recent content in method on PokerBean 的个人主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Sat, 28 Jul 2018 16:01:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://brutalmraz.github.io/tags/method/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>JVM如何执行方法调用</title>
+      <link>https://brutalmraz.github.io/post/jvm%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8/</link>
+      <pubDate>Sat, 28 Jul 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://brutalmraz.github.io/post/jvm%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8/</guid>
+      <description>回顾 重载与重写 ​ 同类重载 (同一类中，两个方法名相同，但参数类型不同的方法 可以构成重载) ​ 子类与父类构成的重载（子类的方法与父类非私有方法名相</description>
+    </item>
+    
+  </channel>
+</rss>

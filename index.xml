@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PokerBean 的个人主页</title>
+    <link>https://brutalmraz.github.io/</link>
+    <description>Recent content on PokerBean 的个人主页</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 06 Aug 2018 16:01:23 +0800</lastBuildDate>
+    
+        <atom:link href="https://brutalmraz.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://brutalmraz.github.io/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>https://brutalmraz.github.io/about/</guid>
+      
+        <description>&lt;p&gt;Hugo is a static site engine written in Go.&lt;/p&gt;
+&lt;p&gt;It makes use of a variety of open source projects including:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cobra&#34;&gt;Cobra&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/viper&#34;&gt;Viper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/jWalterWeatherman&#34;&gt;J Walter Weatherman&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/spf13/cast&#34;&gt;Cast&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Learn more and contribute on &lt;a href=&#34;https://github.com/gohugoio&#34;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>知识付费时代，这几个专栏不会让你失望</title>
+      <link>https://brutalmraz.github.io/post/%E7%9F%A5%E8%AF%86%E4%BB%98%E8%B4%B9%E6%97%B6%E4%BB%A3%E8%BF%99%E5%87%A0%E4%B8%AA%E4%B8%93%E6%A0%8F%E4%B8%8D%E4%BC%9A%E8%AE%A9%E4%BD%A0%E5%A4%B1%E6%9C%9B/</link>
+      <pubDate>Mon, 06 Aug 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://brutalmraz.github.io/post/%E7%9F%A5%E8%AF%86%E4%BB%98%E8%B4%B9%E6%97%B6%E4%BB%A3%E8%BF%99%E5%87%A0%E4%B8%AA%E4%B8%93%E6%A0%8F%E4%B8%8D%E4%BC%9A%E8%AE%A9%E4%BD%A0%E5%A4%B1%E6%9C%9B/</guid>
+      
+        <description>&lt;h1 id=&#34;heading&#34;&gt;知识付费时代，这几个专栏不会让你失望&lt;/h1&gt;
+&lt;h2 id=&#34;1&#34;&gt;1.左耳朵耗子专栏&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://brutalmraz.github.io/assets/mmexport1533125230472.jpg&#34; alt=&#34;mmexport1533125230472&#34;&gt;&lt;/p&gt;
+&lt;p&gt;相信我，骨灰级耗叔的专栏不会让你失望，每篇都够你啃一段时间了。&lt;/p&gt;
+&lt;p&gt;陈皓，人称耗子叔，是一位四十多岁的中年老男人，体型肥胖，白发苍苍，观点鲜明，个性十足。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;他有 20 年软件开发及相关工作经验，先后在阿里巴巴、亚马逊、汤森路透等知名公司任职，对 IT 底层技术平台有深入的了解，尤其在大规模分布式系统的基础架构方面颇有研究。此外，他在团队管理、项目管理，以及程序员个人成长等方面也有自己一套独特的见解和方法。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;从 2002 年开始写技术博客，到 2009 年左右在独立域名 CoolShell.cn（酷壳）上分享技术观点和实践总结，陈皓通过一篇篇观点鲜明、文风犀利的文章吸引了大量 IT 从业人员的关注，影响了成千上万程序员在技术选型、求职就业、个人成长等方面的思考和发展。&lt;/p&gt;
+&lt;p&gt;虽然有些会被读者认同，有些则会引来争议，但他一直坚持观点鲜明的写作风格，并希望这些观点能引起大家的讨论和点评。他认为，只有这样，分享才更有意义，也能让大家都能从中收获更多。&lt;/p&gt;
+&lt;p&gt;除了继续保持观点鲜明、犀利的行文风格，在“左耳听风”专栏中的每篇文章都是陈皓对自己多年“堵过的枪眼儿”“填过的坑儿”的深入思考和凝练，是一些与个人或企业切身利益相关的内容，或者说是更具指导性、更为商业化的内容。用他自己的话说，是一些非常来之不易的宝贵经验。&lt;/p&gt;
+&lt;h2 id=&#34;2-&#34;&gt;2. 硅谷女神的技术管理课&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://brutalmraz.github.io/assets/image-20180801223533100.png&#34; alt=&#34;image-20180801223533100&#34;&gt;&lt;/p&gt;
+&lt;p&gt;朱赟，英文名 Angela，很多人称她为“硅谷女神”，但她更喜欢别人叫她安姐。Angela 毕业于中国科技大学少年班，后在美国莱斯大学取得了计算机博士学位，在读期间主要涉及的技术领域是程序语言设计和生物信息学的大数据分析。她是 Square 公司的第一位华人女工程师，目前在硅谷的共享经济先驱 Airbnb 公司支付部门担任技术经理，负责支付和交易相关的业务。&lt;/p&gt;
+&lt;p&gt;Angela 拥有计算机博士和“资深程序媛”双重头衔，她的技术功底非常扎实，对计算机底层平台技术、算法、操作系统、数学、统计学、机器学习、生物信息大数据处理和搜索支付等相关业务都有精深见解，并在多个领域有论文发表。在 Square 和 Airbnb 两家公司的工作经历，则为她带来了更多的实战技能。&lt;/p&gt;
+&lt;p&gt;Angela 最早是 Airbnb 支付业务的核心架构师和技术骨干，现在是支付技术团队的领导者。从资深技术人员到管理者的角色转换大概是很多工程师面临的难题，毕竟协调团队的日常事务远不如编写代码精准可控。Angela 却在这一段过渡期得到了快速成长，并获取了诸多带领团队的经验与技能。她不囿于经典管理学本身的条框，而是跳出管理者的角色定位，从多重角度出发思考问题，从而形成了一套独特的管理思想。除此之外，长居硅谷生活与工作，Angela 对硅谷的工程师文化、技术特点、个人成长也都有精彩的解读。&lt;/p&gt;
+&lt;p&gt;2016 年 1 月，Angela 开通了微信公众号“嘀嗒嘀嗒”，从此写作一发不可收拾。她撰写了大量的科技、硅谷文化、个人成长、求职、求学等领域的相关文章。结合自己的心路历程和独特的经历，她以轻盈细腻的文笔，鲜明别致的观点，用顶尖女工程师的视角为读者呈现了硅谷的科技生态，以及她对互联网世界的理解，迅速吸引了十万的互联网读者。&lt;/p&gt;
+&lt;p&gt;我们常说写文章要留有余地，要给读者想象和发挥的空间。这一点 Angela 就做得很好，读她的文章常常会有意犹未尽的感觉，文末会引发大量有价值的思考和评论。她认为，好的评论和交流是连接作者和读者的纽带，会给双方都带来更多的成长空间。&lt;/p&gt;
+&lt;p&gt;在本专栏中，&lt;strong&gt;Angela 会更加聚焦在技术管理、技术实践、硅谷文化和个人成长领域，继续以女工程师和技术领导的视角，为大家讲解技术和认知的故事。她愿意把自己在技术和管理上的领悟及忠告、在硅谷工作的体会与见识，通过这个专栏分享给大家。&lt;/strong&gt;&lt;/p&gt;
+&lt;h2 id=&#34;3-&#34;&gt;3. 二爷的产品专栏&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&#34;https://brutalmraz.github.io/assets/mmexport1533127744749.jpg&#34; alt=&#34;mmexport1533127744749&#34;&gt;&lt;/p&gt;
+&lt;p&gt;我不是产品经理，订阅这个专栏纯粹是想拓宽自己的视野。二爷的专栏口碑确实有目共睹。&lt;/p&gt;
+&lt;p&gt;作者简介&lt;/p&gt;
+&lt;p&gt;邱岳，十年资深产品人，无码科技产品经理，千万级用户产品缔造者。&lt;/p&gt;
+&lt;p&gt;邱岳在产品领域有着多年的实践经验，&lt;strong&gt;他曾是阿里的产品经理，后任丁香园的产品总监，现于无码科技创业。十年的产品历程一路走来，让他在无数的产品战役中积攒了足够丰厚的产品经验，从大厂到创业的经历，更是让他练就了独到的产品视角&lt;/strong&gt;。目前，他在无码科技主导的小程序产品已经拥有了数千万级的用户。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;以上三位都是了不起的师父。&lt;/p&gt;
+&lt;p&gt;师父领进门，修行靠个人。&lt;/p&gt;
+&lt;p&gt;信息爆炸的时代，我们要学会拒绝今日头条，抖音，快手等垃圾APP占用我们的时间，如何合理利用自己的时间，真的就看个人了。&lt;/p&gt;
+&lt;p&gt;希望你不要成为思想上的巨人，行动上的矮子。&lt;/p&gt;
+&lt;p&gt;不要囤了一堆干货， 又把他们丢在了时间的裂缝中。&lt;/p&gt;
+&lt;p&gt;共勉！&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>hexo搭建个人博客（基础篇）</title>
+      <link>https://brutalmraz.github.io/post/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/</link>
+      <pubDate>Wed, 01 Aug 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://brutalmraz.github.io/post/%E4%BD%BF%E7%94%A8hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/</guid>
+      
+        <description>&lt;h1 id=&#34;pre&#34;&gt;Pre&lt;/h1&gt;
+&lt;p&gt;As a developer,保持良好的写作和记录习惯是hin重要的。个人博客一种不错的形式。考虑到国内很多技术社区博客页面确实太老旧，太TM丑了，因此，开源个人博客服务开始流行起来，如  「wordpress 」,「hexo」 ,「jekyII 」等。&lt;/p&gt;
+&lt;p&gt;本文将基于「github pages+hexo」的技术方案来介绍，如何从零开始搭建个人博客。&lt;/p&gt;
+&lt;h1 id=&#34;heading&#34;&gt;正文&lt;/h1&gt;
+&lt;h2 id=&#34;heading-1&#34;&gt;环境安装&lt;/h2&gt;
+&lt;h3 id=&#34;nodejs-&#34;&gt;Node.js 的安装&lt;/h3&gt;
+&lt;p&gt;如果你是Mac 用户，建议使用nvm或brew 进行安装管理。 当然也可以访问&lt;a href=&#34;https://nodejs.org/zh-cn/&#34;&gt;Node.js官网&lt;/a&gt;  ，下载Node.js的安装包，自行安装好环境，做好配置。 这里就不一一赘述，应该难不倒作为程序员的你。&lt;/p&gt;
+&lt;h3 id=&#34;git-&#34;&gt;Git 的安装&lt;/h3&gt;
+&lt;p&gt;这里就不一一赘述， 别说你没装。 &lt;a href=&#34;https://git-scm.com/downloads&#34;&gt;Git官网&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&#34;hexo&#34;&gt;hexo的安装&lt;/h3&gt;
+&lt;p&gt;请事先确认npm 命令可用，若不可用，请检查Node.js的环境变量是否已经正确配置。&lt;/p&gt;
+&lt;p&gt;确认命令可用后：&lt;/p&gt;
+&lt;p&gt;Mac 用户打开终端，运行&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ npm install hexo-cli -g&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Windows 用户打开cmd 运行&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ npm install hexo-cli -g&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;这一步可能需要翻墙，所以没有梯子的同学，可以切换至淘宝镜像&lt;a href=&#34;http://npm.taobao.org/&#34;&gt;http://npm.taobao.org/&lt;/a&gt; ，再执行以上命令。 &lt;/p&gt;
+&lt;h2 id=&#34;heading-2&#34;&gt;初始设置&lt;/h2&gt;
+&lt;h3 id=&#34;hexo-1&#34;&gt;hexo创建目录&lt;/h3&gt;
+&lt;p&gt;执行以下命令，hexo 将会在当前路径创建一个blog文件夹，这个文件夹将是你的个人博客的主要工作空间。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hexo init blog
+cd blog
+npm install
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;heading-3&#34;&gt;生成静态页面&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;$ hexo g&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;heading-4&#34;&gt;本地运行&lt;/h3&gt;
+&lt;p&gt;&lt;code&gt;$ hexo s&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;have-a-look&#34;&gt;Have a look.&lt;/h3&gt;
+&lt;p&gt;打开浏览器 访问http://localhost:4000/&lt;/p&gt;
+&lt;p&gt;你会发现，博客已经初始化完成，初始版本是 landscape 皮肤， 略丑。不用担心，后续你可以进行一系列强大的个性化定制。&lt;/p&gt;
+&lt;h2 id=&#34;hexo-&#34;&gt;几个常用的hexo 命令&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;pre&gt;&lt;code&gt;- hexo generate (hexo g)     生成静态文件，会在当前目录下生成一个新的叫做public的文件夹
+- hexo server (hexo s)         启动本地web服务，用于博客的预览
+- hexo deploy (hexo d)        部署博客到远端（比如github, heroku等平台）
+- hexo new “postName”    #新建文章
+- hexo new page “pageName”   #新建页面
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;heading-5&#34;&gt;发布你的第一篇文章&lt;/h2&gt;
+&lt;h3 id=&#34;heading-6&#34;&gt;新建文件&lt;/h3&gt;
+&lt;p&gt;在终端输入&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;hexo new page “helloword”
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;此时在source/_posts 文件夹下将会生成一个helloword.md 文件，请使用markdown语言编辑文件内容。&lt;/p&gt;
+&lt;h3 id=&#34;heading-7&#34;&gt;生成预览&lt;/h3&gt;
+&lt;p&gt;编辑完毕后在终端输入&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hexo g 
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;hexo 会在本地进行静态页面文件的生成，此时你可以执行hexo s 部署本地服务， 访问http://localhost:4000/   进行预览&lt;/p&gt;
+&lt;h3 id=&#34;heading-8&#34;&gt;部署到远端&lt;/h3&gt;
+&lt;p&gt;本文的远程部署方案是与github pages 服务结合。&lt;/p&gt;
+&lt;h4 id=&#34;1st&#34;&gt;1st:&lt;/h4&gt;
+&lt;p&gt;你需要创建一个$username.github.io 的github仓库， 其中$username= 你的GitHub昵称&lt;/p&gt;
+&lt;p&gt;不能有一字之差， 否则将无法启用Github pages 服务。&lt;/p&gt;
+&lt;h4 id=&#34;2nd&#34;&gt;2nd:&lt;/h4&gt;
+&lt;p&gt;安装hexo 远程部署插件&lt;/p&gt;
+&lt;p&gt;运行命令&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;$ npm install hexo-deployer-git --save&lt;/code&gt;&lt;/p&gt;
+&lt;h4 id=&#34;3rd&#34;&gt;3rd:&lt;/h4&gt;
+&lt;p&gt;在全局配置文件_config.yml中 配置参数deploy&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;deploy:
+  type: git
+  repo: https://github.com/username/username.github.io.git
+  branch: master
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;4th&#34;&gt;4th:&lt;/h4&gt;
+&lt;p&gt;执行hexo g  生成静态文件&lt;/p&gt;
+&lt;p&gt;执行hexo d  进行远程部署&lt;/p&gt;
+&lt;h4 id=&#34;5th&#34;&gt;5th:&lt;/h4&gt;
+&lt;p&gt;访问https://username.github.io&lt;/p&gt;
+&lt;p&gt;就可以看到你的博客主页啦。&lt;/p&gt;
+&lt;p&gt;至此， 个人博客的基础搭建已经完成。&lt;/p&gt;
+&lt;p&gt;hexo+github pages 博客进阶技巧，请关注后续文章。&lt;/p&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>JVM是如何加载类的</title>
+      <link>https://brutalmraz.github.io/post/jvm%E6%98%AF%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BD%E7%B1%BB%E7%9A%84/</link>
+      <pubDate>Sun, 29 Jul 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://brutalmraz.github.io/post/jvm%E6%98%AF%E5%A6%82%E4%BD%95%E5%8A%A0%E8%BD%BD%E7%B1%BB%E7%9A%84/</guid>
+      
+        <description>&lt;h1 id=&#34;jvm&#34;&gt;一、JVM类加载&lt;/h1&gt;
+&lt;p&gt;JVM的类加载就像是承包一个建筑工程，首先要出设计方案，然后报备，施工，交付。&lt;/p&gt;
+&lt;p&gt;从class文件到内存中的类，需要经过   **「加载」 、「链接」、「初始化」**这三大步骤。&lt;/p&gt;
+&lt;p&gt;JAVA语言的类型 分为 &lt;strong&gt;「基本类型」&lt;/strong&gt;  和 &lt;strong&gt;「引用类型」&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;其中  「基本类型」 是由JVM 预先定义好的。&lt;/p&gt;
+&lt;p&gt;「引用类型」分为四大类 ： 类、接口、数组类、泛型参数（编译过程中被抹掉）。&lt;/p&gt;
+&lt;p&gt;JVM中具有前三种，但是数组类是JVM直接生成的，所以 类和接口是有对应的字节流，最常见的是class文件的形式。当然字节流还可以是由程序内部生成或者从网络中获取。这些不同形式的字节流都会被加载到JVM中，成为类或者接口。&lt;/p&gt;
+&lt;p&gt;​&lt;/p&gt;
+&lt;h1 id=&#34;heading&#34;&gt;二、类加载的三大步骤&lt;/h1&gt;
+&lt;h2 id=&#34;1&#34;&gt;1.加载&lt;/h2&gt;
+&lt;p&gt;加载，是指查到字节流，并由此创建类的过程。&lt;/p&gt;
+&lt;p&gt;对于数组类来说，他没有对应的字节流，而是通过JVM直接生成的。&lt;/p&gt;
+&lt;p&gt;对于其他类来说，JVM需要借助类加载器来完成查找字节流的过程。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;启动类加载器（boot class loader）&lt;strong&gt;就像是&lt;/strong&gt;其他类加载器&lt;/strong&gt;的祖师爷。&lt;/p&gt;
+&lt;p&gt;其他类加载器都是java.lang.ClassLoader的子类，唯独启动类加载器不是，它是由C++实现的。&lt;/p&gt;
+&lt;p&gt;JVM有一个潜规则叫做双亲委派模型，即每当一个类加载器接收到加载请求时，先要将请求转发给父类加载器，父类加载器没有找到请求的类的情况下，该加载器才会尝试去加载。 这儿子还真是孝顺，有活儿先给爸爸干。&lt;/p&gt;
+&lt;p&gt;在JAVA9之前 启动类加载器负责最基础、最重要的类 ，也就是JRE lib下jar包的类以及由JVM参数-Xbootclasspath指定的类。&lt;/p&gt;
+&lt;p&gt;除了启动类加载器外，另外两个重要的加载器  是「扩展类加载器 （extension class loader）」 和「应用类加载器(application class loader)」&lt;/p&gt;
+&lt;p&gt;扩展类加载器负责JRE lib/ext 下的jar包  以及JVM参数 java.ext.dirs指定的类&lt;/p&gt;
+&lt;p&gt;应用类加载器的父类是扩展类加载器。负责加载应用程序下的类。即JVM参数 -cp/-classpath ；系统变量java.class.path；环境变量CLASSPATH 所指定的路径 。&lt;/p&gt;
+&lt;p&gt;JAVA 9引入了模块系统，对上述类加载器进行了少许修改。这里不讨论。&lt;/p&gt;
+&lt;h2 id=&#34;2&#34;&gt;2.链接&lt;/h2&gt;
+&lt;p&gt;链接是指将创建的类合并到JVM，使之能够执行的过程。&lt;/p&gt;
+&lt;p&gt;它分为验证，准备，解析三个阶段。&lt;/p&gt;
+&lt;p&gt;验证阶段，在于确保被加载类能满足JVM的约束条件。这就相当于设计好的工程图纸要交给有关部门审核是否合法合规了。&lt;/p&gt;
+&lt;p&gt;准备阶段，为被加载类的静态字段分配内存，以及其他类层次先关的数据结构的构造，比如动态绑定方法表。&lt;/p&gt;
+&lt;p&gt;解析阶段，即把上面形成符号引用解析成实际引用。如果符号指向一个未被加载的类，或其字段方法，那么解析将触发这个类的加载。&lt;/p&gt;
+&lt;h2 id=&#34;3&#34;&gt;3.初始化&lt;/h2&gt;
+&lt;p&gt;如果被赋值的静态字段被final修饰，且它的类型是基本类型或者字符串，那么该字段会被JAVA编译器标记成常量值。&lt;/p&gt;
+&lt;p&gt;初始化即使为标记为常量值的字段赋值，以及执行「clinit」方法的过程。&lt;/p&gt;
+&lt;p&gt;JVM会加锁确保clinit 只被执行一次&lt;/p&gt;
+&lt;p&gt;初始化完成后，类才成为可执行状态。&lt;/p&gt;
+&lt;p&gt;JVM对类的初始化触发情况的举例：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;虚拟机启动，初始化用户指定的主类&lt;/li&gt;
+&lt;li&gt;new 指令指定的目标类&lt;/li&gt;
+&lt;li&gt;调用静态方法的指令，启动静态方法所在类&lt;/li&gt;
+&lt;li&gt;访问静态字段，启动静态字段所在类&lt;/li&gt;
+&lt;li&gt;子类初始化触发父类初始化&lt;/li&gt;
+&lt;li&gt;一个借口定义了default方法，那么直接或间接实现该接口的类初始化会触发该接口的初始化&lt;/li&gt;
+&lt;li&gt;使用反射API进行反射调用，初始化这个类&lt;/li&gt;
+&lt;li&gt;初次调用MethodHanlde实例，初始化该MethodHandle指向方法所在的类&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      
+    </item>
+    
+    <item>
+      <title>JVM如何执行方法调用</title>
+      <link>https://brutalmraz.github.io/post/jvm%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8/</link>
+      <pubDate>Sat, 28 Jul 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://brutalmraz.github.io/post/jvm%E5%A6%82%E4%BD%95%E6%89%A7%E8%A1%8C%E6%96%B9%E6%B3%95%E8%B0%83%E7%94%A8/</guid>
+      
+        <description>&lt;h1 id=&#34;-&#34;&gt;回顾 重载与重写&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;​	同类重载 (同一类中，两个方法名相同，但参数类型不同的方法 可以构成重载)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;​        子类与父类构成的重载（子类的方法与父类非私有方法名相同，但参数类型不同）&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;​        重写（子类父类非静态非私有方法名 参数类型全部相同，子类对父类构成重写）&lt;/p&gt;
+&lt;p&gt;​	要注意子类父类非私有方法的方法名和参数类型完全相同，且都为静态，那么不会构成重写，且子类中的方法隐藏了父类中的方法。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;再看一个例子&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-java&#34; data-lang=&#34;java&#34;&gt;	&lt;span style=&#34;color:#75715e&#34;&gt;// 方法一
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;	&lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;doThings&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;String thing&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;Object &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; things2&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+	&lt;span style=&#34;color:#75715e&#34;&gt;// 方法二
+&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;public&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;void&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;doThings&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;(&lt;/span&gt;Object thing&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;Object things2&lt;span style=&#34;color:#f92672&#34;&gt;,&lt;/span&gt;Object &lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt; things3&lt;span style=&#34;color:#f92672&#34;&gt;)&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;
+
+    &lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;doThings(null,1)  实际调用的是方法一&lt;/p&gt;
+&lt;p&gt;doThings(null,1,1)  实际调用的是方法一&lt;/p&gt;
+&lt;p&gt;doThings(null,new Object[]{1})   手动绕开可变参数的语法糖，就能调动方法二 ，但是这种情况一般会引起编译器的报错，提示这个方法调用具有二义性。&lt;/p&gt;
+&lt;p&gt;这是为什么呢？&lt;/p&gt;
+&lt;p&gt;来看看Java编译器对于方法的参数声明类型选取流程&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;不考虑自动拆装箱及可变参数&lt;/li&gt;
+&lt;li&gt;考虑自动拆装箱，但不考虑可变参数&lt;/li&gt;
+&lt;li&gt;考虑自动拆装箱，且考虑可变参数&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;方法一中，由于String是Object的子类，当doThings(null,1) ； 所以Java编译器会觉得方法一更加贴切。所以编译时会自动选择到方法一。&lt;/p&gt;
+&lt;h1 id=&#34;jvm&#34;&gt;JVM的静态绑定和动态绑定&lt;/h1&gt;
+&lt;p&gt;JVM识别方法的关键在于 类名、方法名、以及方法描述符&lt;/p&gt;
+&lt;p&gt;其中&lt;strong&gt;方法描述符&lt;/strong&gt;是由方法的参数类型和返回类型所构成。&lt;/p&gt;
+&lt;p&gt;JVM与java语言对重写的判定不同， java是基于方法名和参数类型 ，而JVM是基于方法描述符。所以JVM能够准确识别目标方法。&lt;/p&gt;
+&lt;p&gt;JVM对于重写的判定基于方法描述符，如果子类定义了与父类非私有、非静态方法相同名字的方法，那么只有这两个方法参数类型和返回类型一致，才会构成重写。&lt;/p&gt;
+&lt;p&gt;对于JAVA语言中重写而非JVM中非重写的情况，编译器会通过&lt;strong&gt;桥接方法&lt;/strong&gt;来实现java的重写定义&lt;/p&gt;
+&lt;p&gt;对于重载方法的区分在编译阶段已完成，所以可以认为在JVM中并不存在重载这一概念。&lt;/p&gt;
+&lt;p&gt;所以在某些文章中，&lt;/p&gt;
+&lt;p&gt;重载称为静态绑定（static binding）或编译时多态（compile-time-polymophism）。&lt;/p&gt;
+&lt;p&gt;重写称为动态绑定(dynamic binding)&lt;/p&gt;
+&lt;p&gt;这个说法并非完全正确，因为某个类的重载方法可能被其子类所重写，所以Java编译器会将所有对非私有实例方法的调用编译为需要动态绑定的类型。&lt;/p&gt;
+&lt;p&gt;Java 字节码中调用相关的五种指令&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;invokestatic：调用静态方法&lt;/li&gt;
+&lt;li&gt;Invokespecial : 调用私有实例方法、构造器，以及使用super关键字调用父类实例方法或构造器和所有实现接口的默认方法。&lt;/li&gt;
+&lt;li&gt;Invokevirtual: 调用非私有实例方法&lt;/li&gt;
+&lt;li&gt;Invokeinterface :调用接口方法&lt;/li&gt;
+&lt;li&gt;Invokedynamic:调用动态方法&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;其中1，2 JVM能直接识别具体的目标方法&lt;/p&gt;
+&lt;p&gt;而 3，4 JVM 需要借助动态类型来确定具体的方法 （例外，若目标方法仅有一个， 比如目标方法被final修饰，那么就可以不借助动态类型来确定）&lt;/p&gt;
+</description>
+      
+    </item>
+    
+  </channel>
+</rss>

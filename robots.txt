@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://brutalmraz.github.io/sitemap.xml
